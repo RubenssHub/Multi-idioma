@@ -1,0 +1,22 @@
+﻿<Window x:Class="Multi_idioma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Multi_idioma"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="89*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtBlockSL" HorizontalAlignment="Left" Margin="50.42,37,0,0" TextWrapping="Wrap" Text="Select Languaje:" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="24" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox x:Name="CBLanguaje" HorizontalAlignment="Left" Margin="142,30,0,0" VerticalAlignment="Top" Width="225" Height="43" Grid.Column="2"/>
+        <ComboBoxItem IsSelected="True" Name="English" Grid.Column="2" Margin="142,31,167,348" FontFamily="Arial" FontSize="30">English</ComboBoxItem>
+        <ComboBoxItem Name="Russkiy" Grid.Column="2" Margin="142,116,167,265" FontFamily="Arial" FontSize="30">Russkiy</ComboBoxItem>
+        <ComboBoxItem Name="Francais" Margin="142,78,167,303" Grid.Column="2" FontFamily="Arial" FontSize="30">Francais</ComboBoxItem>
+        <ComboBoxItem Name="Spanish" Margin="142,154,167,223" Grid.Column="2" FontFamily="Arial" FontSize="30" Selected="Spanish_Selected">Spanish</ComboBoxItem>
+    </Grid>
+</Window>
